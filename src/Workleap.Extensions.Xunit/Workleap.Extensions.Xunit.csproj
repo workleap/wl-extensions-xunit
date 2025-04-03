@@ -2,8 +2,6 @@
   <PropertyGroup>
     <TargetFrameworks>net462;net8.0</TargetFrameworks>
     <IsPackable>True</IsPackable>
-    <IncludeSymbols>True</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <AssemblyTitle>Workleap.Extensions.Xunit</AssemblyTitle>
     <PackageId>Workleap.Extensions.Xunit</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
