@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
+    <TargetFrameworks>net472;net10.0</TargetFrameworks>
     <IsPackable>True</IsPackable>
     <AssemblyTitle>Workleap.Extensions.Xunit</AssemblyTitle>
     <PackageId>Workleap.Extensions.Xunit</PackageId>
@@ -21,12 +21,11 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="8.0.1" />
-    <PackageReference Include="xunit.core" Version="2.9.3" />
+    <PackageReference Include="xunit.v3.extensibility.core" Version="4.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Xunit" />
-    <Using Include="Xunit.Abstractions" />
   </ItemGroup>
 
   <ItemGroup>
