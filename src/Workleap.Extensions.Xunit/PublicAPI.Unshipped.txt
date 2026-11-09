@@ -1,13 +1,1 @@
 #nullable enable
-*REMOVED*Workleap.Extensions.Xunit.BaseIntegrationTest.BaseIntegrationTest(Workleap.Extensions.Xunit.EmptyIntegrationFixture! fixture, Xunit.Abstractions.ITestOutputHelper! testOutputHelper) -> void
-Workleap.Extensions.Xunit.BaseIntegrationTest.BaseIntegrationTest(Workleap.Extensions.Xunit.EmptyIntegrationFixture! fixture, Xunit.ITestOutputHelper! testOutputHelper) -> void
-*REMOVED*Workleap.Extensions.Xunit.BaseIntegrationTest<TFixture>.BaseIntegrationTest(TFixture! fixture, Xunit.Abstractions.ITestOutputHelper! testOutputHelper) -> void
-Workleap.Extensions.Xunit.BaseIntegrationTest<TFixture>.BaseIntegrationTest(TFixture! fixture, Xunit.ITestOutputHelper! testOutputHelper) -> void
-*REMOVED*Workleap.Extensions.Xunit.BaseUnitFixture.SetXunitOutput(Xunit.Abstractions.ITestOutputHelper! outputHelper) -> void
-Workleap.Extensions.Xunit.BaseUnitFixture.SetXunitOutput(Xunit.ITestOutputHelper! outputHelper) -> void
-*REMOVED*Workleap.Extensions.Xunit.BaseUnitTest.BaseUnitTest(Workleap.Extensions.Xunit.EmptyUnitFixture! fixture, Xunit.Abstractions.ITestOutputHelper! testOutputHelper) -> void
-Workleap.Extensions.Xunit.BaseUnitTest.BaseUnitTest(Workleap.Extensions.Xunit.EmptyUnitFixture! fixture, Xunit.ITestOutputHelper! testOutputHelper) -> void
-*REMOVED*Workleap.Extensions.Xunit.BaseUnitTest<TFixture>.BaseUnitTest(TFixture! fixture, Xunit.Abstractions.ITestOutputHelper! testOutputHelper) -> void
-Workleap.Extensions.Xunit.BaseUnitTest<TFixture>.BaseUnitTest(TFixture! fixture, Xunit.ITestOutputHelper! testOutputHelper) -> void
-*REMOVED*Workleap.Extensions.Xunit.IHasXUnitOutput.SetXunitOutput(Xunit.Abstractions.ITestOutputHelper! outputHelper) -> void
-Workleap.Extensions.Xunit.IHasXUnitOutput.SetXunitOutput(Xunit.ITestOutputHelper! outputHelper) -> void

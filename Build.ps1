@@ -22,6 +22,7 @@ Process {
     
         Exec { & dotnet clean -c Release }
         Exec { & dotnet build -c Release }
+        Exec { & dotnet test -c Release --no-build --project Workleap.Extensions.Xunit.Tests.Net10 }
         Exec { & dotnet pack  -c Release --no-build -o "$outputDir" }
 
         if (($null -ne $env:NUGET_SOURCE ) -and ($null -ne $env:NUGET_API_KEY)) {

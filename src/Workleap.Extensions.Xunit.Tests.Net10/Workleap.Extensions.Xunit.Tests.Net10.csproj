@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>Workleap.Extensions.Xunit.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Workleap.Extensions.Xunit\Workleap.Extensions.Xunit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Workleap.Extensions.Xunit.Tests.Shared\**\*.cs" LinkBase="Shared" />
+  </ItemGroup>
+</Project>

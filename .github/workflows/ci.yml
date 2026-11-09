@@ -39,11 +39,26 @@ jobs:
         env:
           NUGET_SOURCE: ${{ vars.GSOFTDEV_NUGET_SOURCE }}
 
-  linearb:
-    needs: [main]
-    uses: workleap/wl-reusable-workflows/.github/workflows/linearb-deployment.yml@main
-    with:
-      environment: development
-    permissions:
-      id-token: write
-      contents: read
+  test:
+    name: test-${{ matrix.project }}
+    runs-on: windows-latest
+    environment: ci
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [Net10, Net472]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v5
+
+      - name: Authenticate to Azure DevOps artifacts
+        uses: workleap/wl-reusable-workflows/az-artifact-authenticate@main
+        with:
+          feed-url: ${{ vars.GSOFTDEV_NUGET_SOURCE }}
+          variables: ${{ toJSON(vars) }}
+
+      - name: Test ${{ matrix.project }}
+        run: dotnet test -c Release --project src/Workleap.Extensions.Xunit.Tests.${{ matrix.project }}
